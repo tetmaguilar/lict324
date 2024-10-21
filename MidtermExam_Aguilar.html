@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+    <title>Resume-Aguilar_MT</title>
+    <style>
+        /*Inline CSS*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f7e3f7;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 15px;
+            text-align: left;
+        }
+        /*collapsible/expandable section js for About Me*/
+        .resume-item {
+            margin-bottom: 20px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        .toggle-button {
+            cursor: pointer;
+            background-color: #ff00c8;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><img src="profile.jpg" alt="broken img"> Ma. Theresa M. Aguilar, MIT</h1>
+        <h2 style="text-align: center;">Faculty, Department of Computer Science</h2>
+        <p style="text-align: center;">Ateneo de Naga University, Naga City, Camarines Sur | mtaguilar@gbox.adnu.edu.ph</p>
+        
+        <hr>
+        
+        <div class="resume-item">
+        <h2>About Me</h2>
+        <button class="toggle-button">More Info</button>
+        <div class="details">
+        <p>My journey in academia began during the 2021-2022 academic year, where I balanced dual roles as a part-time faculty member and an Administrative Assistant in the College of Computer Studies. Passionate about both teaching and technology, I was driven to expand my career. This led me to transition into a full-time probationary faculty role for the 2023-2024 academic year.
+            <br><br>
+            Before stepping into the world of academia, I earned my master’s degree in Information Technology at our university in November 2021, marking the start of my deep commitment to the evolving field of technology and education.</p>
+        </div></div>
+        <hr>
+        
+        <h2>Educational History</h2>
+        <b>Master of Information Technology</b>
+        <br>
+        <i>Ateneo de Naga University, November, 2021</i>
+        
+        <br>
+        <br>
+        
+        <b>Computer Programing</b>
+        <br>
+        <i>Ateneo de Naga University, 2009-2010</i>
+                
+        <br>
+        <br>
+
+        <b>Bachelor of Science in Nursing</b>
+        <br>
+        <i>Universidad de Sta. Isabel, March, 2008</i>
+
+        <hr>
+        
+        <h2>General and Technical Skills</h2>
+        <table style="text-align: center">
+            <tr>
+                <th>Technical Skills</th>
+                <th>Professional Skills</th>
+            </tr>
+            <tr>
+                <td>Office Productivity Suite</td>
+                <td>Problem Solving</td>
+            </tr>
+            <tr>
+                <td>Web Programming</td>
+                <td>Dynamic</td>
+            </tr>
+            <tr>
+                <td>Database Management</td>
+                <td>Motivated</td>
+            </tr>
+            <tr>
+                <td>Programming Software </td>
+                <td>Performance-driven individual</td>
+            </tr>
+            <tr>
+                <td>Operating System</td>
+                <td>More than 10 years of progressive work experience</td>
+            </tr>
+            <tr>
+                <td>Basic Computer Troubleshooting</td>
+                <td>Possess an understanding and expertise in hardware, network, and software languages and support.</td>
+            </tr>
+        </table>
+        
+
+        <hr>
+        
+        <h2>Work Experience</h2>
+        <b>Full-time Faculty</b>
+        <br>
+        <i>2022-Present</i>
+        <ul>
+            <li>Department of Computer Science, Ateneo de Naga University,</li>
+            <li>Naga City, Philippines </li>
+        </ul>
+        
+        <br>
+
+        <b>Part-time Faculty</b>
+        <br>
+        <i>Second Semester, 2021-2022</i>
+        <ul>
+            <li>Department of Computer Science, Ateneo de Naga University,</li>
+            <li>Naga City, Philippines </li>
+        </ul>
+        
+        <br>
+        
+        <b>Dean’s Office Administrative Assistant</b>
+        <br>
+        <i>2013 – 2022</i>
+        <ul>
+            <li>College of Computer Studies, Ateneo de Naga University, </li>
+            <li>Naga City, Philippines</li>
+        </ul>
+
+        <br>
+        
+        <b>Desktop Support Personnel</b>
+        <br>
+        <i>2011 – 2013</i>
+        <ul>
+            <li>Network Operations and Computer Services,  Ateneo de Naga University,</li>
+            <li>Naga City, Philippines</li>
+        </ul>
+
+        <hr>
+
+        <h2>References</h2>
+        <ol>
+            <li>Allan A. Sioson, PhD. - GCash Company | (+63) 9190679817</li>
+            <li>Emmanuel B. Quiachon - Desktop Support and Software Administrator, Network Operations and Computer  Services,  Ateneo de Naga University| (+63)9985743527</li>
+            <li>Marlinda S. Regondola, PhD. - Former, OIC-Dean, CCS, Ateneo de Naga University| (+63)9297117530</li>
+        </ol>
+    </div>
+
+    <script>
+        //collapsible/expandable section js for About Me
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const details = button.nextElementSibling;
+                const isVisible = details.style.display === 'block';
+
+                details.style.display = isVisible ? 'none' : 'block';
+                button.textContent = isVisible ? 'More Info' : 'Less Info';
+            });
+        });
+    </script>
+</body>
+</html>
